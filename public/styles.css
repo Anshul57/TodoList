@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 150vh;
+    background-image: linear-gradient(100deg, #575656, #062e3f);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    margin-top: 7%;
+}
+
+h1 {
+    font-size: 85px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+
+form {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    max-width: 500px;
+    background-color: #181a1a;
+    color: rgb(247, 226, 223);
+    width: 100%;
+    flex: 1;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+
+}
+
+.round {
+    font-size: 19px;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    border-radius: 80%;
+    margin: 0 5px;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5vh;
+    padding-bottom: 7vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 1rem;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25rem 0.25rem;
+    border-radius: 30px;
+    background-color: rgb(26, 27, 27);
+}
+
+.todo li {
+    padding: 7px;
+    font-size: 20px;
+    flex: 1;
+    padding-right: 7vh;
+    overflow: anywhere;
+}
+
+.completed {
+    transition: 0.2s;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.endFooter {
+    display: flex;
+    margin-top: 7vh;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 55px;
+        font-weight: normal;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        border-top-left-radius: 17px;
+        border-bottom-left-radius: 17px;
+        max-width: 500px;
+        background-color: #181a1a;
+        color: rgb(247, 226, 223);
+        width: 100%;
+        flex: 1;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        border-top-right-radius: 17px;
+        border-bottom-right-radius: 17px;
+    }
+
+    .todo li {
+        padding: 7px;
+        font-size: 17px;
+        flex: 1;
+        overflow: anywhere;
+        padding-right: 7vh;
+    }
+}
+
